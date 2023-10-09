@@ -195,3 +195,118 @@ function showProduct3(data) {
   }
 }
 showProduct3(listxdcn);
+
+
+
+function detailProduct() {
+  const prdId = new URLSearchParams(window.location.search).get('id');
+  console.log(prdId);
+  
+  if (prdId) {
+    let product;
+    let detailProductDiv = document.querySelector('.left-detail');
+    
+    product = listSnCongNghiep.find(function(item) {
+      return item.id == prdId;
+    });
+    
+    if (product) {
+      console.log(product);
+      detailProductDiv.innerHTML = `
+        <h3>${product.headerText}</h3>
+        <img src="${product.imgSrc}" width="100%" alt="">
+        <p>Thông tin dự án:</p>
+        <div class="">
+          <table>
+            <tr class="le">
+              <th>Tên dự án:</th>
+              <td>${product.headerText}</td>
+            </tr>
+            <tr>
+              <th>Chủ Đầu tư:</th>
+              <td>VinGroup</td>
+            </tr>
+            <tr class="le">
+              <th>Thời Gian Hoàn Thành:</th>
+              <td>tháng 3-2020</td>
+            </tr>
+            <tr>
+              <th>Địa Điểm:</th>
+              <td>TP. HCM</td>
+            </tr>
+          </table>
+        </div>
+      `;
+    } else {
+      product = listXayDung.find(function(item) {
+        return item.id == prdId;
+      });
+
+      if (product) {
+        console.log(product);
+        detailProductDiv.innerHTML = `
+          <h3>${product.headerText}</h3>
+          <img src="${product.imgSrc}" width="100%" alt="">
+          <p>Thông tin dự án:</p>
+          <div class="">
+            <table>
+              <tr class="le">
+                <th>Tên dự án:</th>
+                <td>${product.headerText}</td>
+              </tr>
+              <tr>
+                <th>Chủ Đầu tư:</th>
+                <td>VinGroup</td>
+              </tr>
+              <tr class="le">
+                <th>Thời Gian Hoàn Thành:</th>
+                <td>tháng 3-2020</td>
+              </tr>
+              <tr>
+                <th>Địa Điểm:</th>
+                <td>TP. HCM</td>
+              </tr>
+            </table>
+          </div>
+        `;
+      } else {
+        product = listxdcn.find(function(item) {
+          return item.id == prdId;
+        });
+
+        if (product) {
+          console.log(product);
+          detailProductDiv.innerHTML = `
+            <h3>${product.headerText}</h3>
+            <img src="${product.imgSrc}" width="100%" alt="">
+            <p>Thông tin dự án:</p>
+            <div class="">
+              <table>
+                <tr class="le">
+                  <th>Tên dự án:</th>
+                  <td>${product.headerText}</td>
+                </tr>
+                <tr>
+                  <th>Chủ Đầu tư:</th>
+                  <td>VinGroup</td>
+                </tr>
+                <tr class="le">
+                  <th>Thời Gian Hoàn Thành:</th>
+                  <td>tháng 3-2020</td>
+                </tr>
+                <tr>
+                  <th>Địa Điểm:</th>
+                  <td>TP. HCM</td>
+                </tr>
+              </table>
+            </div>
+          `;
+        } else {
+          console.log('Không tìm thấy sản phẩm');
+        }
+      }
+    }
+  }
+}
+
+detailProduct();

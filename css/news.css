@@ -1,0 +1,26 @@
+.news{
+    margin-top: 100px;
+}
+.header-news{
+    margin: 0 0 50px;
+}
+.right-header-news h3{
+    color: #026937;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+.right-header-news p{
+    font-size: 0.8rem;
+    font-style: italic;
+}
+.item-news h3{
+    color: #026937;
+    font-weight: 900;
+    font-size: .8rem;
+    margin-top: 15px;
+}
+.right-news h3{
+    color: #c20212;
+    font-weight: 900;
+    
+}
