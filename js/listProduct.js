@@ -104,6 +104,26 @@ const listhoachat = [
     imgSrc: "images/hoa4.png",
     headerText: "Hoá Chất Ngành Thực Phẩm",
   },
+  {
+    id: 24,
+    imgSrc: "images/hoa5.png",
+    headerText: "Hoá Chất Ngành Xây Dựng",
+  },
+  {
+    id: 25,
+    imgSrc: "images/hoa6.png",
+    headerText: "Hoá Chất Ngành Thuỷ Sản",
+  },
+  {
+    id: 26,
+    imgSrc: "images/hoa7.png",
+    headerText: "Hoá Chất Ngành Sản Xuất",
+  },
+  {
+    id: 27,
+    imgSrc: "images/hoa8.png",
+    headerText: "Hoá Chất Ngành Thực Phẩm",
+  },
 ];
 
 // Hiển thị mảng sản phẩm bổ sung trong console
