@@ -32,8 +32,8 @@ function showProduct1(data) {
       // console.log(item);
       popularList.innerHTML += `
                         <div class="col-md-4 col-lg-4 col-12 col-sm-12 item-news">
+                        <a href="detailnew.html?id=${item.id}">
                             <img src="${item.imgSrc}" width="100%" alt="">
-                            <a href="detailnew.html?id=${item.id}">
                                 <h3>${item.title}</h3>
                             </a>
                         </div>
@@ -63,10 +63,11 @@ function detailNews() {
     });
 
     if (product) {
-      detailProductDiv.innerHTML = `
-      <h3>${product.title}</h3>
-      <img src="${product.imgSrc}" width="100%" alt="">
-      <h6>${product.content}</h6>
+      detailProductDiv.innerHTML =
+        `
+          <h3>${product.title}</h3>
+          <img src="${product.imgSrc}" width="100%" alt="">
+          <h6>${product.content}</h6>
         `;
     }
   }

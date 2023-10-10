@@ -14,9 +14,9 @@ document.getElementById("myForm").addEventListener("submit", function (e) {
         title: titleValue,
         message: messageValue
     };
-    emailjs.init("7bFnzLsthdfnXc8wI");
+    emailjs.init("Gb5hhu_I4keqlZ_oW");
     // Gửi email bằng Email.js
-    emailjs.send("service_e1clpcc", "template_5g0bvyl", templateParams)
+    emailjs.send("service_8rqf89h", "template_2gf32v2", templateParams)
         .then(function (response) {
             console.log("Email đã được gửi thành công!", response);
             // Thực hiện các xử lý khác sau khi gửi email thành công

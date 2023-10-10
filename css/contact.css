@@ -5,3 +5,10 @@
 .maps{
     margin-top: 100px;
 }
+.contact button{
+    border: none;
+    padding: 10px 50px;
+    border-radius: 30px;
+    background-color: #128277;
+    color: #fff;
+}
