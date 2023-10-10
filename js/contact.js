@@ -18,11 +18,11 @@ document.getElementById("myForm").addEventListener("submit", function (e) {
     // Gửi email bằng Email.js
     emailjs.send("service_8rqf89h", "template_2gf32v2", templateParams)
         .then(function (response) {
-            console.log("Email đã được gửi thành công!", response);
+            alert("Email đã được gửi thành công!", response);
             // Thực hiện các xử lý khác sau khi gửi email thành công
         })
         .catch(function (error) {
-            console.log("Lỗi khi gửi email: ", error);
+          alert("Lỗi khi gửi email: ", error);
             // Xử lý lỗi nếu có
         });
 });

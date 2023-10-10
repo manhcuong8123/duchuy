@@ -85,17 +85,17 @@ const listXayDung = [
 
 const listhoachat = [
   {
-    id: 20,
+    id: 21,
     imgSrc: "images/hoa1.png",
     headerText: "Hoá Chất Ngành Xây Dựng",
   },
   {
-    id: 21,
+    id: 22,
     imgSrc: "images/hoa22.png",
     headerText: "Hoá Chất Ngành Thuỷ Sản",
   },
   {
-    id: 22,
+    id: 28,
     imgSrc: "images/hoa3.png",
     headerText: "Hoá Chất Ngành Sản Xuất",
   },
